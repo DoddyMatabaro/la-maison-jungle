@@ -25,7 +25,7 @@ const ShoppingList = () => {
         </ul>
         <h3>Plantes</h3>
         <ul>
-            {listPl.map((plant, index)=>(<li key={`${plant}-${index}`}>{ plant.isBestSale ? <span></span>:<span></span> }</li>))}
+            {plantList.map((plant)=>(<li key={`${plant.id}`}> {plant.name} {plant.isBestSale ? <span> 🔥</span> : <span> 👎🏾</span>}</li>))}
         </ul>
         </div>
     );
